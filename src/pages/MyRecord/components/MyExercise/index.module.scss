@@ -1,0 +1,44 @@
+@import '/src/styles/variables';
+
+.container {
+  padding: 16px 24px;
+  background-color: $secondary-color;
+
+  .title {
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .date {
+      font-weight: 400;
+      font-size: 22px;
+      margin-left: 15px;
+    }
+  }
+
+  .exercise_table {
+    height: 192px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: calc((100% - 40px) / 2) auto;
+    column-gap: 40px;
+    padding-right: 32px;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: $quaternary-color;
+      border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $tertiary-color;
+      border-radius: 3px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.container {
+  height: 234px;
+  width: 100%;
+  position: relative;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ffcc21;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 7px 8px;
+  }
+}

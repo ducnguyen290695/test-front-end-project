@@ -1,0 +1,32 @@
+@import '/src/styles/variables';
+
+.container {
+  width: $max-width-desktop;
+  margin: 0 auto;
+  padding-top: 56px;
+  .recommends {
+    display: grid;
+    grid-template-columns: calc((100% - 96px) / 3) calc((100% - 96px) / 3) auto;
+    column-gap: 48px;
+  }
+
+  .my_diary {
+    display: grid;
+    grid-template-columns:
+      calc((100% - 36px) / 4) calc((100% - 36px) / 4) calc((100% - 36px) / 4)
+      auto;
+    gap: 12px;
+  }
+
+  .title {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 5px;
+  }
+
+  .submit_btn {
+    display: flex;
+    justify-content: center;
+  }
+}

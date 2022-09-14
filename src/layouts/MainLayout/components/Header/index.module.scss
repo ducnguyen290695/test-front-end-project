@@ -1,0 +1,110 @@
+@import '/src/styles/variables';
+
+.container {
+  background-color: $secondary-color;
+  padding: 12px 0 12px 0;
+  overflow-y: visible;
+
+  .content {
+    width: $max-width-desktop;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left_col {
+      display: flex;
+      align-items: center;
+    }
+
+    .right_col {
+      .menu_items {
+        display: flex;
+
+        .menu {
+          display: flex;
+          align-items: center;
+          color: white;
+          font-weight: 300;
+          cursor: pointer;
+          position: relative;
+          transition: all 0.2s;
+          a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+              color: $primary-color;
+            }
+          }
+
+          &:not(:last-child) {
+            padding: 0 16px 0 12px;
+
+            svg {
+              margin-right: 10px;
+            }
+          }
+
+          .menu_list {
+            position: absolute;
+            top: 20px;
+            right: 3px;
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            z-index: 100;
+            background-color: $quaternary-color;
+            color: white;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.25s;
+
+            .menu_item {
+              padding: 23px 32px;
+              border-bottom: 1px solid #656565;
+              border-top: 1px solid #8b8b8b;
+              transition: all 0.2s;
+              &:hover {
+                color: $primary-color;
+              }
+            }
+          }
+
+          .menu_opened {
+            top: 30px;
+            opacity: 1;
+            visibility: visible;
+          }
+
+          .close_icon {
+            font-size: 30px;
+            width: 32px;
+            color: $primary-color;
+          }
+
+          .menu_icon {
+            position: relative;
+            display: flex;
+            align-items: center;
+            .bage {
+              color: red;
+              position: absolute;
+              right: 2px;
+              top: -5px;
+              height: 16px;
+              width: 16px;
+              background-color: #ea6c00;
+              border-radius: 50%;
+              font-weight: 400;
+              font-size: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

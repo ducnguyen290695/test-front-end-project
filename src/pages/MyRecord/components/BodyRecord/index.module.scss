@@ -1,0 +1,55 @@
+@import '/src/styles/variables';
+
+.container {
+  background-color: $secondary-color;
+  padding: 16px 24px;
+
+  .title {
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .date {
+      font-weight: 400;
+      font-size: 22px;
+      margin-left: 15px;
+    }
+  }
+
+  .body_record_chart {
+    padding: 0;
+    background-color: $secondary-color;
+  }
+
+  .filter_buttons {
+    margin-top: 10px;
+    .filter_btn {
+      color: $primary-color;
+      height: 24px;
+      width: 54px;
+      border: none;
+      border-radius: 11px;
+      font-weight: 300;
+      font-size: 15px;
+      background-color: white;
+      cursor: pointer;
+      transition: all 0.2s;
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      &:hover {
+        background-color: $tertiary-color;
+        color: white;
+      }
+    }
+
+    .actived_btn {
+      background-color: $tertiary-color;
+      color: white;
+    }
+  }
+}

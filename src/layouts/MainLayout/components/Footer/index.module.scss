@@ -1,0 +1,23 @@
+@import '/src/styles/variables';
+
+.container {
+  background-color: $secondary-color;
+  padding: 56px 0;
+  .content {
+    width: $max-width-desktop;
+    margin: 0 auto;
+
+    a {
+      text-decoration: none;
+    }
+
+    .menu {
+      color: white;
+      font-weight: 300;
+      font-size: 11px;
+      &:not(:last-child) {
+        margin-right: 45px;
+      }
+    }
+  }
+}

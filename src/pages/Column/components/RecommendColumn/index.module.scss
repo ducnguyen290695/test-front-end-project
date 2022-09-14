@@ -1,0 +1,35 @@
+@import '/src/styles/variables';
+.container {
+  padding: 24px 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e2e2e;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .title {
+    font-weight: 400;
+    font-size: 22px;
+    color: $tertiary-color;
+    text-align: center;
+  }
+
+  .line {
+    width: 56px;
+    border-top: 1px solid white;
+    margin: 10px 0;
+  }
+
+  .description {
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+  }
+}

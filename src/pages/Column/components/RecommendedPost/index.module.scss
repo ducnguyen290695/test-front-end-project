@@ -1,0 +1,44 @@
+@import '/src/styles/variables';
+
+.container {
+  .thumnail {
+    height: 144px;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .time {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: $tertiary-color;
+      font-weight: 400;
+      font-size: 15px;
+      color: white;
+      padding: 3px 10px;
+    }
+  }
+
+  .title {
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .description {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 22px;
+    color: $primary-color;
+  }
+}
